@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30rem 30rem 30em;
+    grid-template-rows: 15rem 15rem;
+    gap: 2rem;
+}
+.grid div{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.grid .box1{
+    background: red;
+}
+.grid .box2{
+    background: green;
+}
+.grid .box3{
+    background: blue;
+}
+.grid .box4{
+    background: #d2691e;
+}
+
+@media only screen and (max-width:800px){
+    .grid {
+        grid-template-columns: 30rem 30rem;
+        grid-template-rows: 15rem 15rem;
+    }
+}
+@media only screen and (max-width:500px){
+    .grid {
+        grid-template-columns: 30rem;
+        grid-template-rows: 15rem 15rem 15rem 15rem;
+    }
+}
